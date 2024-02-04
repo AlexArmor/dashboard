@@ -1,0 +1,101 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        title Document
+        link(href=require('./style.scss') rel='stylesheet')
+    body
+        aside.aside
+            h3.aside__title Dashboard
+            nav.aside__navigation
+            - var nameArray = [{title: 'Dashboard', url: '#'}, {title: 'Product', url: '#'}, {title: 'Customers', url: '#'}, {title: 'Income', url: '#'}, {title: 'Promote', url: '#'}, {title: 'Help', url: '#'}]
+                ul.aside__list 
+                    for item in nameArray
+                        li.aside__item
+                            a(href= item.url)
+                                p.aside__subtitile= item.title
+                                    svg.nav__link-icon
+                                        use(href="#")
+            footer.aside__footer
+        header.header
+            h1.header__title Hello Evano 👋🏼,
+        main.main
+            table.main__table 
+                thead 
+                    tr
+                        th 
+                        th 
+                        th 
+                        th 
+                        th 
+                        th 
+                tbody 
+                    tr
+                        td 
+                        td 
+                        td 
+                        td 
+                        td 
+                        td 
+                    tr
+                        td 
+                        td 
+                        td 
+                        td 
+                        td 
+                        td 
+                    tr
+                        td 
+                        td 
+                        td 
+                        td 
+                        td 
+                        td 
+                    tr
+                        td 
+                        td 
+                        td 
+                        td 
+                        td 
+                        td 
+                    tr
+                        td 
+                        td 
+                        td 
+                        td 
+                        td 
+                        td 
+                    tr
+                        td 
+                        td 
+                        td 
+                        td 
+                        td 
+                        td 
+                    tr
+                        td 
+                        td 
+                        td 
+                        td 
+                        td 
+                        td 
+                    tr
+                        td 
+                        td 
+                        td 
+                        td 
+                        td 
+                        td 
+            div
+                p Showing data 1 to 8 of  256K entries
+                div.pagination
+                    button 
+                    button 
+                    button 
+                    button 
+                    button 
+                    button 
+                    button 
+                    button 
+
+        script(src=require('./index.js'))
