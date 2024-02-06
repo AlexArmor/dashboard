@@ -10,92 +10,57 @@ html(lang="en")
             nav.aside__navigation
             - var nameArray = [{title: 'Dashboard', url: '#'}, {title: 'Product', url: '#'}, {title: 'Customers', url: '#'}, {title: 'Income', url: '#'}, {title: 'Promote', url: '#'}, {title: 'Help', url: '#'}]
                 ul.aside__list 
-                    for item in nameArray
+                    each item in nameArray
                         li.aside__item
                             a(href= item.url)
-                                p.aside__subtitile= item.title
+                                h4.aside__subtitile= item.title
                                     svg.nav__link-icon
                                         use(href="#")
             footer.aside__footer
         header.header
             h1.header__title Hello Evano 👋🏼,
         main.main
-            table.main__table 
-                thead 
-                    tr
-                        th 
-                        th 
-                        th 
-                        th 
-                        th 
-                        th 
-                tbody 
-                    tr
-                        td 
-                        td 
-                        td 
-                        td 
-                        td 
-                        td 
-                    tr
-                        td 
-                        td 
-                        td 
-                        td 
-                        td 
-                        td 
-                    tr
-                        td 
-                        td 
-                        td 
-                        td 
-                        td 
-                        td 
-                    tr
-                        td 
-                        td 
-                        td 
-                        td 
-                        td 
-                        td 
-                    tr
-                        td 
-                        td 
-                        td 
-                        td 
-                        td 
-                        td 
-                    tr
-                        td 
-                        td 
-                        td 
-                        td 
-                        td 
-                        td 
-                    tr
-                        td 
-                        td 
-                        td 
-                        td 
-                        td 
-                        td 
-                    tr
-                        td 
-                        td 
-                        td 
-                        td 
-                        td 
-                        td 
-            div
-                p Showing data 1 to 8 of  256K entries
-                div.pagination
-                    button 
-                    button 
-                    button 
-                    button 
-                    button 
-                    button 
-                    button 
-                    button 
+            section.customers
+                div.customers__header
+                    h2.customers__title All Customers
+                    span.customers__info-text Active Members
+                table.main-table 
+                    thead.main-table__head 
+                        tr
+                            th Customer Name
+                            th Company
+                            th Phone Number
+                            th Email
+                            th Country
+                            th Status
+                    tbody.main-table__body 
+                    - var customersArray = [{name: 'Jane Cooper', company: 'Microsoft', number: '(225) 555-0118', email: 'jane@microsoft.com', country: 'United States', status: 'Active'}, {name: 'Floyd Miles', company: 'Yahoo', number: '(205) 555-0100', email: 'floyd@yahoo.com', country: 'Kiribati', status: 'Inactive'}, {name: 'Ronald Richards', company: 'Adobe', number: '(302) 555-0107', email: 'ronald@adobe.com', country: 'Israel', status: 'Inactive'}, {name: 'Marvin McKinney', company: 'Tesla', number: '(252) 555-0126', email: 'marvin@tesla.com', country: 'Iran', status: 'Active'}, {name: 'Jerome Bell', company: 'Google', number: '(629) 555-0129', email: 'jerome@google.com', country: 'Réunion', status: 'Active'}, {name: 'Kathryn Murphy', company: 'Microsoft', number: '(406) 555-0120', email: 'kathryn@microsoft.com', country: 'Curaçao', status: 'Active'}, {name: 'Jacob Jones', company: 'Yahoo', number: '(208) 555-0112', email: 'jacob@yahoo.com', country: 'Brazil', status: 'Active'}, {name: 'Kristin Watson', company: 'Facebook', number: '(704) 555-0127', email: 'kristin@facebook.com', country: 'Åland Islands', status: 'Inactive'}]
+                    each item in customersArray
+                        tr
+                            td= item.name 
+                            td= item.company
+                            td= item.number
+                            td= item.email
+                            td= item.country
+                            td= item.status
+                div
+                    p Showing data 1 to 8 of  256K entries
+                    ul.pagination-list
+                        li.pagination-list__item
+                            button <
+                        li.pagination-list__item
+                            button 1
+                        li.pagination-list__item
+                            button 2
+                        li.pagination-list__item
+                            button 3
+                        li.pagination-list__item
+                            button 4
+                        li.pagination-list__item
+                            button ...
+                        li.pagination-list__item
+                            button 40
+                        li.pagination-list__item
+                            button >
 
         script(src=require('./index.js'))
