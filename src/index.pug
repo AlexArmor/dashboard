@@ -3,9 +3,11 @@ html(lang="en")
     head
         meta(charset="UTF-8")
         title Document
-        link(href=require('./style.scss') rel='stylesheet')
+        link(href=require('./sass/style.scss') rel='stylesheet')
     body
         aside.aside
+            svg.icon-setting
+                use(href="./assets/symbol-defs.svg#icon-setting")
             h3.aside__title Dashboard
             nav.aside__navigation
             - var nameArray = [{title: 'Dashboard', url: '#'}, {title: 'Product', url: '#'}, {title: 'Customers', url: '#'}, {title: 'Income', url: '#'}, {title: 'Promote', url: '#'}, {title: 'Help', url: '#'}]
