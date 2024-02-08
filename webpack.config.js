@@ -8,7 +8,10 @@ module.exports = {
   },
   output: {
     path: path.join(__dirname, "dist/"),
-    publicPath: "/",
+    // output filename of JS files
+    filename: "assets/js/[name].[contenthash:8].js",
+    assetModuleFilename: path.join("images", "[name].[contenthash][ext]"),
+    // publicPath: "/",
   },
   module: {
     rules: [
@@ -19,6 +22,17 @@ module.exports = {
       {
         test: /\.(css|sass|scss)$/,
         use: ["css-loader", "sass-loader"],
+      },
+      {
+        test: /\.(png|jpg|jpeg|gif)$/i,
+        type: "asset/resource",
+      },
+      {
+        test: /\.svg$/,
+        type: "asset/resource",
+        generator: {
+          filename: path.join("icons", "[name].[contenthash:8][ext]"),
+        },
       },
       {
         test: /\.js$/,
