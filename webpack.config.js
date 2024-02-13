@@ -11,7 +11,7 @@ module.exports = {
     // output filename of JS files
     filename: "assets/js/[name].[contenthash:8].js",
     assetModuleFilename: path.join("images", "[name].[contenthash][ext]"),
-    // publicPath: "/",
+    publicPath: "/",
   },
   module: {
     rules: [

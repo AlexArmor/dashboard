@@ -1,9 +1,35 @@
-.icon-setting{
+.aside {
+  padding: 36px 28px 76px 28px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  margin-bottom: 64px;
+
+  &__icon-setting {
     display: block;
     width: 37px;
     height: 37px;
     margin-right: 8px;
-    fill: black;
-    stroke: black;
-    color: black;
+    fill: $black-color;
+  }
+
+  &__title {
+    color: $black-color;
+    font-size: 26px;
+    font-weight: 600;
+    line-height: 100%;
+  }
+
+  &__subtitle {
+    color: $grey-color;
+    font-size: 10px;
+  }
+
+  &__text-wrapper {
+    display: flex;
+    align-items: baseline;
+    gap: 4px;
+  }
 }

@@ -6,9 +6,12 @@ html(lang="en")
         link(href=require('./sass/style.scss') rel='stylesheet')
     body
         aside.aside
-            svg.icon-setting
-                use(href=require("./images/symbol-defs.svg#icon-setting"))
-            h3.aside__title Dashboard
+            div.logo
+                svg.logo__icon-setting
+                    use(href=require("./images/symbol-defs.svg#icon-setting"))
+                div.logo__text-wrapper
+                    h3.logo__title Dashboard
+                    span.logo__subtitle v.01
             nav.aside__navigation
             - var nameArray = [{title: 'Dashboard', url: '#', icon: "icon-key-square"}, {title: 'Product', url: '#', icon: "icon-d-square"}, {title: 'Customers', url: '#', icon: "icon-user-square"}, {title: 'Income', url: '#', icon: "icon-wallet-money"}, {title: 'Promote', url: '#', icon: "icon-discount-shape"}, {title: 'Help', url: '#', icon: "icon-message-question"}]
                 ul.aside__list 
@@ -16,12 +19,11 @@ html(lang="en")
                         li.aside__item
                             a(href= item.url)
                                 h4.aside__subtitile= item.title
-                                    svg.nav__link-icon
-                                        use(href=require(`./images/symbol-defs.svg#${item.icon}`))
+                                svg.nav__link-icon
+                                    use(href=require(`./images/symbol-defs.svg#${item.icon}`))
             footer.aside__footer
-        header.header
-            h1.header__title Hello Evano 👋🏼,
         main.main
+            h1.header__title Hello Evano 👋🏼,
             section.customers
                 div.customers__header
                     h2.customers__title All Customers
@@ -65,4 +67,4 @@ html(lang="en")
                         li.pagination-list__item
                             button >
 
-        script(src=require('./index.js'))
+        //- script(src=require('./index.js'))

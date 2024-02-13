@@ -10,8 +10,8 @@
             </path>
         </symbol>
         <symbol id="icon-key-square" viewBox="0 0 32 32">
-            <path fill="none" stroke="#9197b3" style="stroke: var(--color1, #9197b3)" stroke-linejoin="round"
-                stroke-linecap="round" stroke-miterlimit="4" stroke-width="2"
+            <path fill="none" style="stroke: var(--color1, #9197b3)" stroke-linejoin="round" stroke-linecap="round"
+                stroke-miterlimit="4" stroke-width="2"
                 d="M12 29.333h8c6.667 0 9.333-2.667 9.333-9.333v-8c0-6.667-2.667-9.333-9.333-9.333h-8c-6.667 0-9.333 2.667-9.333 9.333v8c0 6.667 2.667 9.333 9.333 9.333z">
             </path>
             <path fill="none" stroke="#9197b3" style="stroke: var(--color1, #9197b3)" stroke-linejoin="round"
