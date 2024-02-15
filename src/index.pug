@@ -13,14 +13,21 @@ html(lang="en")
                     h3.logo__title Dashboard
                     span.logo__subtitle v.01
             nav.aside__navigation
-            - var nameArray = [{title: 'Dashboard', url: '#', icon: "icon-key-square"}, {title: 'Product', url: '#', icon: "icon-d-square"}, {title: 'Customers', url: '#', icon: "icon-user-square"}, {title: 'Income', url: '#', icon: "icon-wallet-money"}, {title: 'Promote', url: '#', icon: "icon-discount-shape"}, {title: 'Help', url: '#', icon: "icon-message-question"}]
+            - var nameArray = [{title: 'Product', url: '#', icon: "icon-d-square"}, {title: 'Customers', url: '#', icon: "icon-user-square"}, {title: 'Income', url: '#', icon: "icon-wallet-money"}, {title: 'Promote', url: '#', icon: "icon-discount-shape"}, {title: 'Help', url: '#', icon: "icon-message-question"}]
                 ul.aside__list 
+                    li.aside__item
+                            a.aside__link(href= '#')
+                                svg.aside__link-icon
+                                    use(href=require('./images/symbol-defs.svg#icon-key-square'))
+                                h4.aside__subtitile Dashboard
                     each item in nameArray
                         li.aside__item
-                            a(href= item.url)
-                                h4.aside__subtitile= item.title
-                                svg.nav__link-icon
+                            a.aside__link(href= item.url)
+                                svg.aside__link-icon
                                     use(href=require(`./images/symbol-defs.svg#${item.icon}`))
+                                h4.aside__subtitile= item.title
+                                svg.arrow-icon
+                                    use(href=require(`./images/symbol-defs.svg#icon-chevron-right`))
             footer.aside__footer
         main.main
             h1.header__title Hello Evano 👋🏼,

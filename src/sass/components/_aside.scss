@@ -1,5 +1,26 @@
 .aside {
   padding: 36px 28px 76px 28px;
+
+  &__link{
+    display: flex;
+    align-items: center;
+  }
+  
+  &__link-icon{
+    width: 24px;
+    height: 24px;
+    margin-right: 14px;
+  }
+
+  &__subtitile{
+    font-size: 14px;
+    color: $nav-color;
+  }
+}
+
+.arrow-icon{
+  width: 16px;
+  height: 16px;
 }
 
 .logo {
