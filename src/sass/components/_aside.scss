@@ -1,29 +1,44 @@
 .aside {
+  display: flex;
+  flex-direction: column;
+
   padding: 36px 28px 76px 28px;
   width: 306px;
+  min-height: 1198px;
+  background-color: red;
 
-  &__item{
+  &__item {
     margin-bottom: 40px;
   }
 
-  &__link{
+  &__link {
     display: flex;
+    justify-content: space-between;
     align-items: center;
   }
-  
-  &__link-icon{
+
+  &__link_dashboard {
+    justify-content: flex-start;
+  }
+
+  &__link-icon {
     width: 24px;
     height: 24px;
     margin-right: 14px;
   }
 
-  &__subtitile{
+  &__link-wrapper {
+    display: flex;
+    align-items: center;
+  }
+
+  &__subtitile {
     font-size: 14px;
     color: $nav-color;
   }
 }
 
-.arrow-icon{
+.arrow-icon {
   width: 16px;
   height: 16px;
 }
@@ -57,5 +72,17 @@
     display: flex;
     align-items: baseline;
     gap: 4px;
+  }
+}
+
+.author {
+  margin-top: auto;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  &__image {
+  }
+  &__info {
   }
 }

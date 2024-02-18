@@ -1,16 +1,16 @@
 html {
-    scroll-behavior: smooth;
-  }
-  
-body {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 14px;
-    letter-spacing: 0.04em;
-    background-color: $bg-color;
-    color: $text-color;
-    display: flex;
+  scroll-behavior: smooth;
 }
-  
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  letter-spacing: 0.04em;
+  background-color: $bg-main-color;
+  color: $text-color;
+  display: flex;
+}
+
 h1,
 h2,
 h3,
@@ -22,16 +22,16 @@ ul {
   margin: 0;
   padding: 0;
 }
-  
+
 ul {
   list-style: none;
 }
-  
+
 a {
   text-decoration: none;
   cursor: pointer;
 }
-  
+
 img {
   display: block;
   max-width: 100%;
