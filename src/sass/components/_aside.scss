@@ -81,8 +81,15 @@
   align-items: center;
   gap: 12px;
 
-  &__image {
+  &__name {
+    font-size: 14px;
+    font-weight: 500;
+    color: $black-color;
   }
-  &__info {
+
+  &__position{
+    font-size: 12px;
+    font-weight: 400;
+    color: $grey-color;
   }
 }
