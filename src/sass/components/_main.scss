@@ -4,6 +4,23 @@
   padding: 41px 95px 76px 71px;
 }
 
+.header__title{
+  font-size: 24px;
+  color: $black-color;
+  margin-bottom: 51px;
+}
+
 .section-customers {
   padding: 30px 44px 40px 38px;
+
+  &__title{
+    font-size: 22px;
+    font-weight: 600;
+    color: $black-color;
+  }
+
+  &__info-text{
+    font-weight: 400;
+    color: $green-light-color;
+  }
 }
