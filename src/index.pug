@@ -12,6 +12,12 @@ html(lang="en")
                 div.section-customers__header
                     h2.section-customers__title All Customers
                     span.section-customers__info-text Active Members
+                form.search-form(action="submit") 
+                    button.search-form__button
+                        svg.search-form__icon
+                            use(href=require('./images/symbol-defs.svg#icon-search'))
+                    label.search-form__label
+                        input.search-form__input(type="text", placeholder="Search")
                 include includes/table
                 include includes/pagination
                 
