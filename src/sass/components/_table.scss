@@ -1,11 +1,18 @@
 .table {
     width: 968px;
-}
 
-.table__head tr{
-    color: $table-head-color;
-}
+    &__head tr{
+        color: $table-head-color;
+        border-bottom: 1px solid #EEEEEE;
+    }
 
-.table__head th{
-    font-weight: 500;
+    &__head th{
+        padding-bottom: 14px;
+        font-weight: 500;
+    }
+
+    &__cell{
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
 }
