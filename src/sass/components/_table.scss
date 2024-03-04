@@ -1,5 +1,7 @@
 .table {
-    width: 968px;
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 30px;
 
     &__head tr{
         color: $table-head-color;
@@ -9,10 +11,20 @@
     &__head th{
         padding-bottom: 14px;
         font-weight: 500;
+        text-align: start;
     }
 
     &__cell{
         padding-top: 20px;
         padding-bottom: 20px;
     }
+
+    &__line {
+        border-bottom: 1px solid #EEEEEE;
+        border-top: 1px solid #EEEEEE;
+    }
+}
+
+.table .table__cell-status{
+    text-align: center;
 }
