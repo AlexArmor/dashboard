@@ -1,14 +1,29 @@
-.pagination {
+.section-customers__footer {
   display: flex;
   align-items: center;
   justify-content: space-between;
 
-  &-list {
-    display: flex;
-    gap: 12px;
-  }
-
-  &__inscription{
+  &-text{
     color: $light-grey-color;
   }
+}
+
+.pagination {
+  display: flex;
+  gap: 12px;
+
+  &__btn{
+    width: 24px;
+    height: 24px;
+    border: 1px solid #EEEEEE;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.search-form__icon{
+  width: 8px;
+  height: 12px;
 }
